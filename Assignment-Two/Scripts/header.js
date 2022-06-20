@@ -1,0 +1,1 @@
+document.write('<div class="header-grid-container"><div><img alt="Logo for PT Fitness" width="300" height="150" src="../Images/Logo.png"></div><div><h1>PT Fitness</h1></div></div>')

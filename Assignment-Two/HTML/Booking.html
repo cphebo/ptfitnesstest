@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="../CSS/style.css">
+	<title>PT</title>
+	<meta charset="utf-8">
+</head>
+<script src="../Scripts/header.js"></script>
+<style>
+	.wrapper {
+		padding: 10px;
+		background-image: linear-gradient(to bottom, rgba(246, 231, 173, 1) 0%, rgba(246, 231, 173, 1) 100%), linear-gradient(to bottom, rgba(246, 231, 173, 1) 0%, rgba(246, 231, 173, 1) 100%);
+		background-clip: content-box, padding-box;
+	}
+
+	.container {
+		background-color: #fafafa;
+		max-width: 1000px;
+		margin: 0px auto;
+		box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+		display: flex;
+
+	}
+
+	.container-time {
+		background-color: rgba(0, 0, 0, .95);
+		padding: 50px;
+		outline: 3px dashed #998100;
+		outline-offset: -30px;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		color: #fff;
+		letter-spacing: 1px;
+	}
+
+	.heading {
+		font-size: 35px;
+		text-transform: uppercase;
+	}
+
+	.heading-days {
+		color: #998100;
+		font-size: 30px;
+
+	}
+
+	.heading-phone {
+		font-size: 20px;
+	}
+
+	.container-form {
+		padding: 20px 0;
+		margin: 0 auto;
+		color: #000;
+	}
+
+	form {
+		display: grid;
+		grid-row-gap: 20px;
+	}
+
+	form p {
+		font-weight: 600;
+	}
+
+	.form-field {
+		padding: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	input,
+	select {
+		pad: 10px 15px;
+	}
+
+	.btn {
+		background-color: rgba(0, 0, 0, .95);
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		font-size: 18px;
+		border-radius: 100px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-ms-border-radius: 100px;
+		-o-border-radius: 100px;
+		box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+		cursor: pointer;
+		transition: all .3s;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-ms-transition: all .3s;
+		-o-transition: all .3s;
+	}
+
+	.btn:hover {
+		transform: scale(1.03);
+		-webkit-transform: scale(1.03);
+		-moz-transform: scale(1.03);
+		-ms-transform: scale(1.03);
+		-o-transform: scale(1.03);
+		box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+	}
+
+	.container-form h2 {
+		text-align: center;
+	}
+
+	@media screen and (max-width: 768px) {
+		.container {
+			flex-direction: column;
+		}
+
+		.container-form {
+			padding: 10px;
+		}
+
+		.heading-phone {
+			font-size: 17px;
+		}
+
+
+
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 880px) {
+		.container-time {
+			padding: 30px;
+		}
+
+		.container-form {
+			padding: 10px;
+		}
+
+
+	}
+</style>
+
+<body>
+	<!--Start Of Top Navigation Menu-->
+	<ul class="topnav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Booking.html">Booking</a></li>
+		<li><a href="Service.html">Our Services</a></li>
+		<li><a href="AboutUs.html">About us!</a></li>
+	</ul>
+	<!--End of Top Navigation Menu-->
+
+
+
+	<div class="wrapper">
+		<div class="container">
+			<div class="container-time">
+				<h2 class="heading">Book your membership</h2>
+
+				<h3 class="heading-days">PT FITNESS</h3>
+				<p>OPEN 24/7</p>
+				<p>FLEXIBLE & AFFORDABLE MEMBERSHIPS</p>
+				<h4 class="heading-phone">Call Us: (123) 45-67-890</h4>
+			</div>
+
+			<div class="container-form">
+				<form action="#">
+					<h2 class="heading heading-yellow">SIGN UP</h2>
+
+					<div class="form-field">
+						<p>Full Name</p>
+						<input type="text" placeholder="Your Name">
+					</div>
+					<div class="form-field">
+						<p>Email</p>
+						<input type="email" placeholder="Your email">
+					</div>
+					<div class="form-field">
+						<p>Appointment Date</p>
+						<input type="date">
+					</div>
+					<div class="form-field">
+						<p>Schedule Appointment</p>
+						<input type="time">
+					</div>
+					<div class="form-field">
+						<p>Choose a Membership</p>
+						<select name="select" id="#">
+							<option value="1">Weekly - $20.00</option>
+							<option value="2">Fortnightly - $39.00</option>
+							<option value="3">Monthly - $84.00</option>
+							<option value="4">Yearly - $700.00s</option>
+						</select>
+					</div>
+
+					<button class="btn">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../Scripts/footer.js"></script>
+
+</html>
